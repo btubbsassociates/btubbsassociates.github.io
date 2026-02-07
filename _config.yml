@@ -1,0 +1,54 @@
+# Site Settings
+title: "B Tubbs & Associates Consulting"
+description: "Operations Management Consulting"
+tagline: "I work with large industrial producers to identify and unlock performance improvements in their operations."
+url: "https://www.btubbsassociates.com"
+baseurl: "" # Leave empty for custom domain or root deployment
+
+# Author Information
+author:
+  name: "Bill Tubbs"
+  email: "bill.tubbs@me.com"
+  phone: "+1 778 378 6539"
+  location: "Vancouver, BC, Canada"
+  linkedin: "https://www.linkedin.com/in/billtubbs/"
+
+# Build Settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Navigation
+header_pages:
+  - index.md
+  - services.md
+  - testimonials.md
+  - blog.md
+  - contact.md
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+
+# Default values
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Bill Tubbs"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

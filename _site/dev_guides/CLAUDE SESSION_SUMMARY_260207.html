@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>B Tubbs &amp; Associates Website Migration - Session Summary | B Tubbs &amp; Associates Consulting</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="B Tubbs &amp; Associates Website Migration - Session Summary" />
+<meta name="author" content="Bill Tubbs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Operations Management Consulting" />
+<meta property="og:description" content="Operations Management Consulting" />
+<link rel="canonical" href="http://localhost:4000/dev_guides/CLAUDE%20SESSION_SUMMARY_260207.html" />
+<meta property="og:url" content="http://localhost:4000/dev_guides/CLAUDE%20SESSION_SUMMARY_260207.html" />
+<meta property="og:site_name" content="B Tubbs &amp; Associates Consulting" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="B Tubbs &amp; Associates Website Migration - Session Summary" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Bill Tubbs"},"description":"Operations Management Consulting","headline":"B Tubbs &amp; Associates Website Migration - Session Summary","url":"http://localhost:4000/dev_guides/CLAUDE%20SESSION_SUMMARY_260207.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="B Tubbs &amp; Associates Consulting" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">B Tubbs &amp; Associates Consulting</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/">Home</a><a class="page-link" href="/services/">Services</a><a class="page-link" href="/testimonials/">Testimonials</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/contact/">Contact</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1 id="b-tubbs--associates-website-migration---session-summary">B Tubbs &amp; Associates Website Migration - Session Summary</h1>
+<p><strong>Date:</strong> February 7, 2026
+<strong>Project:</strong> Migrating Wix website to Jekyll + GitHub Pages</p>
+
+<hr />
+
+<h2 id="-project-overview">📋 Project Overview</h2>
+
+<p><strong>Goal:</strong> Migrate www.btubbsassociates.com from Wix to Jekyll static site hosted on GitHub Pages</p>
+
+<p><strong>Current Status:</strong></p>
+<ul>
+  <li>✅ Jekyll site created with custom branding</li>
+  <li>✅ All pages structured and content added</li>
+  <li>⚠️ Issues with footer display and CSS loading (in progress)</li>
+  <li>⏳ Images need to be added</li>
+  <li>⏳ Ready for deployment after fixes</li>
+</ul>
+
+<hr />
+
+<h2 id="-what-we-accomplished">🎯 What We Accomplished</h2>
+
+<h3 id="1-website-analysis">1. Website Analysis</h3>
+<ul>
+  <li>Explored the existing Wix site at www.btubbsassociates.com</li>
+  <li>Identified all pages: Home, Services, Testimonials, Blog, Contact</li>
+  <li>Catalogued all images needed (10 total)</li>
+  <li>Created detailed image download list with URLs and suggested filenames</li>
+</ul>
+
+<h3 id="2-platform-selection">2. Platform Selection</h3>
+<p><strong>Chose Jekyll + GitHub Pages</strong> over alternatives:</p>
+<ul>
+  <li>✅ Free hosting (saves $180-420/year vs Wix)</li>
+  <li>✅ Full control and version history with Git</li>
+  <li>✅ Professional themes available</li>
+  <li>✅ Built-in blog support</li>
+  <li>✅ Custom domain support</li>
+  <li>❌ Rejected Jemdoc (too academic)</li>
+  <li>❌ Rejected Hugo (good but Jekyll has better GitHub integration)</li>
+</ul>
+
+<h3 id="3-jekyll-site-creation">3. Jekyll Site Creation</h3>
+<p>Created complete Jekyll site structure with:</p>
+<ul>
+  <li>All 5 pages (Home, Services, Testimonials, Blog, Contact)</li>
+  <li>Custom layouts and styling</li>
+  <li>Blog functionality with sample post</li>
+  <li>Configuration files</li>
+  <li>Complete documentation (README, QUICKSTART, IMAGE_SETUP)</li>
+</ul>
+
+<h3 id="4-brand-color-integration">4. Brand Color Integration</h3>
+<ul>
+  <li>Analyzed color palette from PowerPoint presentation image</li>
+  <li>Extracted exact hex colors using Python/PIL:
+    <ul>
+      <li>Primary: <code class="language-plaintext highlighter-rouge">#262f33</code> (Dark blue-gray)</li>
+      <li>Secondary: <code class="language-plaintext highlighter-rouge">#617b82</code> (Medium blue-gray)</li>
+      <li>Accent: <code class="language-plaintext highlighter-rouge">#637b83</code> (Light blue-gray)</li>
+    </ul>
+  </li>
+  <li>Applied throughout CSS for consistent branding</li>
+  <li>Created BRAND_COLORS.md reference document</li>
+</ul>
+
+<h3 id="5-rubyjekyll-environment-setup">5. Ruby/Jekyll Environment Setup</h3>
+<p><strong>Encountered and solved Ruby version issue:</strong></p>
+<ul>
+  <li>Problem: Ruby 4.0.1 incompatible with github-pages gem</li>
+  <li>Solution: Installed rbenv and Ruby 3.3.6</li>
+  <li>Fixed PATH configuration to prioritize rbenv</li>
+  <li>Required terminal restart for changes to take effect</li>
+</ul>
+
+<h3 id="6-bundle-installation-issues">6. Bundle Installation Issues</h3>
+<p><strong>Fixed Gemfile conflicts:</strong></p>
+<ul>
+  <li>Original Gemfile had Jekyll 4.3 + github-pages conflict</li>
+  <li>Created corrected Gemfile using github-pages ~231</li>
+  <li>Added webrick gem for Ruby 3.0+ compatibility</li>
+  <li>Successfully installed all dependencies</li>
+</ul>
+
+<h3 id="7-identified-current-issues">7. Identified Current Issues</h3>
+<p><strong>Issue 1 - Footer Display:</strong></p>
+<ul>
+  <li>Footer showing raw YAML data instead of formatted contact info</li>
+  <li>Displays: <code class="language-plaintext highlighter-rouge">{"name"=&gt;"Bill Tubbs", "email"=&gt;"bill.tubbs@me.com"...}</code></li>
+  <li>Cause: Default Minima theme doesn’t handle custom author fields</li>
+</ul>
+
+<p><strong>Issue 2 - CSS Not Loading:</strong></p>
+<ul>
+  <li>Background white, no brand colors visible</li>
+  <li>Cause: CSS file named <code class="language-plaintext highlighter-rouge">main.scss</code> instead of <code class="language-plaintext highlighter-rouge">style.scss</code></li>
+  <li>Minima 2.5.1 expects <code class="language-plaintext highlighter-rouge">style.scss</code></li>
+</ul>
+
+<p><strong>Issue 3 - CSS Import Error:</strong></p>
+<ul>
+  <li>Error: “File to import not found: minima/skins/classic”</li>
+  <li>Cause: Minima 2.5.1 doesn’t have skins feature (added in later versions)</li>
+  <li>Solution: Change import from complex structure to simple <code class="language-plaintext highlighter-rouge">@import "minima";</code></li>
+</ul>
+
+<hr />
+
+<h2 id="-current-file-structure">📁 Current File Structure</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>btubbsassociates/
+├── _config.yml                 # Site configuration
+├── _includes/                  # Custom template overrides
+│   ├── footer.html            # ⚠️ NEEDS TO BE ADDED - fixes footer
+│   └── head.html              # ⚠️ NEEDS TO BE ADDED - ensures CSS loads
+├── _layouts/
+│   └── home.html              # Custom home layout
+├── _posts/
+│   └── 2024-01-15-welcome.md  # Sample blog post
+├── assets/
+│   ├── css/
+│   │   └── style.scss         # ⚠️ NEEDS FIX - import error, wrong name
+│   └── images/                # ⏳ EMPTY - needs images from Wix
+│       ├── services/          # (5 service images needed)
+│       ├── testimonials/      # (2 icon GIFs needed)
+│       └── icons/             # (1 LinkedIn icon needed)
+├── index.md                   # Home page
+├── services.md                # Services page
+├── testimonials.md            # Testimonials page
+├── blog.md                    # Blog listing page
+├── contact.md                 # Contact page
+├── Gemfile                    # Ruby dependencies (fixed)
+├── .gitignore                 # Git ignore rules
+├── README.md                  # Full documentation
+├── QUICKSTART.md              # Quick start guide
+├── IMAGE_SETUP.md             # Image placement instructions
+└── BRAND_COLORS.md            # Color reference guide
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="-fixes-created-but-not-yet-applied">🔧 Fixes Created But Not Yet Applied</h2>
+
+<h3 id="fix-1-custom-footer-template">Fix 1: Custom Footer Template</h3>
+<p><strong>File:</strong> <code class="language-plaintext highlighter-rouge">_includes/footer.html</code>
+<strong>Purpose:</strong> Properly formats contact information instead of showing raw YAML
+<strong>Status:</strong> Created, needs to be added to project</p>
+
+<h3 id="fix-2-custom-head-template">Fix 2: Custom Head Template</h3>
+<p><strong>File:</strong> <code class="language-plaintext highlighter-rouge">_includes/head.html</code>
+<strong>Purpose:</strong> Ensures CSS loads correctly
+<strong>Status:</strong> Created, needs to be added to project</p>
+
+<h3 id="fix-3-corrected-css-file">Fix 3: Corrected CSS File</h3>
+<p><strong>File:</strong> <code class="language-plaintext highlighter-rouge">assets/css/style.scss</code>
+<strong>Changes needed:</strong></p>
+<ol>
+  <li>Rename from <code class="language-plaintext highlighter-rouge">main.scss</code> to <code class="language-plaintext highlighter-rouge">style.scss</code></li>
+  <li>Fix import statement from complex to simple: <code class="language-plaintext highlighter-rouge">@import "minima";</code></li>
+  <li>Keep all brand color styles below import</li>
+</ol>
+
+<hr />
+
+<h2 id="-step-by-step-fix-instructions">📝 Step-by-Step Fix Instructions</h2>
+
+<h3 id="immediate-fixes-needed">Immediate Fixes Needed:</h3>
+
+<ol>
+  <li><strong>Create <code class="language-plaintext highlighter-rouge">_includes</code> directory:</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~/btubbsassociates
+<span class="nb">mkdir</span> <span class="nt">-p</span> _includes
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Add footer.html to _includes/</strong>
+    <ul>
+      <li>Copy footer.html file provided</li>
+      <li>Formats contact info properly</li>
+    </ul>
+  </li>
+  <li><strong>Add head.html to _includes/</strong>
+    <ul>
+      <li>Copy head.html file provided</li>
+      <li>Ensures CSS loads</li>
+    </ul>
+  </li>
+  <li><strong>Fix CSS file:</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Open assets/css/style.scss (or main.scss)</span>
+<span class="c"># Change lines 4-8 to just:</span>
+<span class="nt">---</span>
+<span class="nt">---</span>
+   
+@import <span class="s2">"minima"</span><span class="p">;</span>
+   
+<span class="c"># Keep all the brand color styles below</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Rename CSS if needed:</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~/btubbsassociates
+<span class="c"># If file is still called main.scss:</span>
+<span class="nb">mv </span>assets/css/main.scss assets/css/style.scss
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Clear cache and restart:</strong>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">rm</span> <span class="nt">-rf</span> _site .jekyll-cache
+bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="️-images-still-needed">🖼️ Images Still Needed</h2>
+
+<h3 id="downloaded-from-wix-media-manager">Downloaded from Wix Media Manager:</h3>
+<p>You’ve downloaded these from Wix but need to rename and place them:</p>
+
+<ol>
+  <li><strong>Hero background:</strong> <code class="language-plaintext highlighter-rouge">hero-background.jpg</code> → <code class="language-plaintext highlighter-rouge">assets/images/</code></li>
+  <li><strong>Profile photo:</strong> <code class="language-plaintext highlighter-rouge">bill-tubbs-photo.jpg</code> → <code class="language-plaintext highlighter-rouge">assets/images/</code></li>
+  <li><strong>Service images</strong> → <code class="language-plaintext highlighter-rouge">assets/images/services/</code>:
+    <ul>
+      <li>data-analytics.jpg</li>
+      <li>process-control.jpg</li>
+      <li>energy-management.jpg</li>
+      <li>production-optimization.jpg (or replacement - this was the non-downloadable one)</li>
+      <li>management-control.jpg</li>
+    </ul>
+  </li>
+  <li><strong>Testimonial icons</strong> → <code class="language-plaintext highlighter-rouge">assets/images/testimonials/</code>:
+    <ul>
+      <li>icon-oil-gas.gif</li>
+      <li>icon-mine.gif</li>
+    </ul>
+  </li>
+  <li><strong>LinkedIn icon:</strong> <code class="language-plaintext highlighter-rouge">linkedin.png</code> → <code class="language-plaintext highlighter-rouge">assets/images/icons/</code></li>
+</ol>
+
+<p><strong>See IMAGE_SETUP.md for detailed mapping from Wix filenames to new names</strong></p>
+
+<hr />
+
+<h2 id="-deployment-plan-after-fixes">🚀 Deployment Plan (After Fixes)</h2>
+
+<h3 id="step-1-test-locally">Step 1: Test Locally</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~/btubbsassociates
+bundle <span class="nb">exec </span>jekyll serve
+<span class="c"># Visit http://localhost:4000</span>
+<span class="c"># Verify all pages work and colors show</span>
+</code></pre></div></div>
+
+<h3 id="step-2-create-github-repository">Step 2: Create GitHub Repository</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># On GitHub.com, create new repository:</span>
+<span class="c"># Name: yourusername.github.io (or any name)</span>
+<span class="c"># Public</span>
+<span class="c"># Don't initialize with README</span>
+
+<span class="c"># In terminal:</span>
+git init
+git add <span class="nb">.</span>
+git commit <span class="nt">-m</span> <span class="s2">"Initial commit - B Tubbs Associates website"</span>
+git branch <span class="nt">-M</span> main
+git remote add origin https://github.com/yourusername/reponame.git
+git push <span class="nt">-u</span> origin main
+</code></pre></div></div>
+
+<h3 id="step-3-enable-github-pages">Step 3: Enable GitHub Pages</h3>
+<ul>
+  <li>Go to repository Settings → Pages</li>
+  <li>Source: Deploy from branch <code class="language-plaintext highlighter-rouge">main</code> / folder <code class="language-plaintext highlighter-rouge">/ (root)</code></li>
+  <li>Save</li>
+  <li>Wait 2-5 minutes for deployment</li>
+</ul>
+
+<h3 id="step-4-configure-custom-domain">Step 4: Configure Custom Domain</h3>
+<p><strong>In GitHub:</strong></p>
+<ul>
+  <li>Settings → Pages → Custom domain: <code class="language-plaintext highlighter-rouge">www.btubbsassociates.com</code></li>
+  <li>Save</li>
+  <li>Enable “Enforce HTTPS”</li>
+</ul>
+
+<p><strong>With Domain Registrar:</strong>
+Add DNS records:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Type: CNAME
+Name: www
+Value: yourusername.github.io
+
+Type: A
+Name: @
+Values: 185.199.108.153
+        185.199.109.153
+        185.199.110.153
+        185.199.111.153
+</code></pre></div></div>
+
+<p>Wait 1-24 hours for DNS propagation.</p>
+
+<hr />
+
+<h2 id="-files-delivered">📦 Files Delivered</h2>
+
+<h3 id="main-packages">Main Packages:</h3>
+<ol>
+  <li><strong>btubbs-jekyll-site.zip</strong> - Original Jekyll site (generic colors)</li>
+  <li><strong>btubbs-jekyll-site-BRANDED.zip</strong> - Jekyll site with your brand colors</li>
+  <li><strong>btubbs-fixes.tar.gz</strong> - Contains footer/head fixes + corrected CSS</li>
+</ol>
+
+<h3 id="documentation">Documentation:</h3>
+<ol>
+  <li><strong>website_recreation_plan.md</strong> - Full migration analysis</li>
+  <li><strong>image_download_list.md</strong> - Complete image inventory with URLs</li>
+  <li><strong>FIX_INSTRUCTIONS.md</strong> - Detailed fix instructions</li>
+  <li><strong>BRAND_COLORS.md</strong> - Color reference (RGB, CMYK, Pantone)</li>
+  <li><strong>README.md</strong> - Comprehensive site documentation (in zip)</li>
+  <li><strong>QUICKSTART.md</strong> - Quick start guide (in zip)</li>
+  <li><strong>IMAGE_SETUP.md</strong> - Image placement guide (in zip)</li>
+</ol>
+
+<hr />
+
+<h2 id="-known-issues--solutions">🐛 Known Issues &amp; Solutions</h2>
+
+<h3 id="issue-ruby-version-conflict">Issue: Ruby Version Conflict</h3>
+<p><strong>Problem:</strong> Ruby 4.0.1 incompatible with github-pages
+<strong>Solution:</strong> Install Ruby 3.3.6 via rbenv
+<strong>Status:</strong> ✅ RESOLVED</p>
+
+<h3 id="issue-footer-shows-raw-yaml">Issue: Footer Shows Raw YAML</h3>
+<p><strong>Problem:</strong> Default Minima theme doesn’t format custom author fields
+<strong>Solution:</strong> Add custom footer.html to _includes/
+<strong>Status:</strong> ⚠️ FIX CREATED, NOT YET APPLIED</p>
+
+<h3 id="issue-no-colors-visible">Issue: No Colors Visible</h3>
+<p><strong>Problem:</strong> CSS file not loading, wrong filename
+<strong>Solution:</strong> Rename to style.scss, fix import statement
+<strong>Status:</strong> ⚠️ FIX CREATED, NOT YET APPLIED</p>
+
+<h3 id="issue-css-import-error">Issue: CSS Import Error</h3>
+<p><strong>Problem:</strong> “minima/skins/classic” doesn’t exist in Minima 2.5.1
+<strong>Solution:</strong> Change to simple <code class="language-plaintext highlighter-rouge">@import "minima";</code>
+<strong>Status:</strong> ⚠️ FIX IDENTIFIED, NOT YET APPLIED</p>
+
+<hr />
+
+<h2 id="-technical-environment">💻 Technical Environment</h2>
+
+<h3 id="installed-software">Installed Software:</h3>
+<ul>
+  <li>Ruby 3.3.6 (via rbenv)</li>
+  <li>Bundler 2.x</li>
+  <li>Jekyll 3.9.5</li>
+  <li>github-pages gem ~231</li>
+</ul>
+
+<h3 id="system">System:</h3>
+<ul>
+  <li>macOS (Mac Mini 2018)</li>
+  <li>User: billtubbs</li>
+  <li>Project location: ~/btubbsassociates/</li>
+</ul>
+
+<h3 id="ruby-configuration">Ruby Configuration:</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># rbenv initialized in ~/.zshrc</span>
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.rbenv/shims:</span><span class="nv">$PATH</span><span class="s2">"</span>
+<span class="nb">eval</span> <span class="s2">"</span><span class="si">$(</span>rbenv init - zsh<span class="si">)</span><span class="s2">"</span>
+
+<span class="c"># Local Ruby version set via:</span>
+rbenv <span class="nb">local </span>3.3.6
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="-brand-colors-applied">🎨 Brand Colors Applied</h2>
+
+<h3 id="color-palette-from-powerpoint">Color Palette (from PowerPoint):</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Primary (Dark):     #262f33  RGB(38, 47, 51)
+Secondary (Medium): #617b82  RGB(97, 123, 130)
+Accent (Light):     #637b83  RGB(99, 123, 131)
+Supporting Dark:    #233237  RGB(35, 50, 55)
+Supporting Light:   #66797f  RGB(102, 121, 127)
+</code></pre></div></div>
+
+<h3 id="where-colors-applied">Where Colors Applied:</h3>
+<ul>
+  <li>Hero section overlay and border</li>
+  <li>Page headers and titles</li>
+  <li>All links (hover effects)</li>
+  <li>Service card borders</li>
+  <li>Navigation bar</li>
+  <li>Footer background</li>
+  <li>CTA section gradients</li>
+  <li>Contact section highlights</li>
+  <li>All buttons and interactive elements</li>
+</ul>
+
+<hr />
+
+<h2 id="-content-structure">📋 Content Structure</h2>
+
+<h3 id="home-page-indexmd">Home Page (index.md):</h3>
+<ul>
+  <li>Hero section with company name and tagline</li>
+  <li>Bio section with professional photo</li>
+  <li>Services overview (5 cards)</li>
+  <li>Call-to-action button</li>
+</ul>
+
+<h3 id="services-page-servicesmd">Services Page (services.md):</h3>
+<p>5 detailed service sections:</p>
+<ol>
+  <li>Advanced Data Analytics</li>
+  <li>Advanced Process Control</li>
+  <li>Energy Optimization and Management</li>
+  <li>Production Optimization</li>
+  <li>Management Control and Reporting</li>
+</ol>
+
+<p>Each section has:</p>
+<ul>
+  <li>Featured image</li>
+  <li>Service title</li>
+  <li>Tagline</li>
+  <li>Description</li>
+  <li>Bullet point list of offerings</li>
+</ul>
+
+<h3 id="testimonials-page-testimonialsmd">Testimonials Page (testimonials.md):</h3>
+<p>3 client testimonials:</p>
+<ol>
+  <li>Director of Data Science (oil/gas)</li>
+  <li>General Manager (mining)</li>
+  <li>Director, Energy Projects (mining)</li>
+</ol>
+
+<h3 id="blog-page-blogmd">Blog Page (blog.md):</h3>
+<ul>
+  <li>Lists all blog posts</li>
+  <li>Sample welcome post included</li>
+  <li>Ready for additional posts in _posts/ folder</li>
+</ul>
+
+<h3 id="contact-page-contactmd">Contact Page (contact.md):</h3>
+<ul>
+  <li>Contact information display</li>
+  <li>Location: Vancouver, BC, Canada</li>
+  <li>Email: bill.tubbs@me.com</li>
+  <li>Phone: +1 778 378 6539</li>
+  <li>LinkedIn profile link</li>
+  <li>Placeholder for contact form</li>
+</ul>
+
+<hr />
+
+<h2 id="-next-steps-priority-order">🔄 Next Steps (Priority Order)</h2>
+
+<h3 id="immediate-required-to-see-site-properly">Immediate (Required to see site properly):</h3>
+<ol>
+  <li>✅ Add <code class="language-plaintext highlighter-rouge">_includes/footer.html</code> file</li>
+  <li>✅ Add <code class="language-plaintext highlighter-rouge">_includes/head.html</code> file</li>
+  <li>✅ Fix CSS import error in <code class="language-plaintext highlighter-rouge">style.scss</code></li>
+  <li>✅ Ensure CSS file is named <code class="language-plaintext highlighter-rouge">style.scss</code> not <code class="language-plaintext highlighter-rouge">main.scss</code></li>
+  <li>✅ Clear Jekyll cache and restart server</li>
+  <li>✅ Verify colors and footer display correctly</li>
+</ol>
+
+<h3 id="before-deployment">Before Deployment:</h3>
+<ol>
+  <li>⏳ Add all images to appropriate folders</li>
+  <li>⏳ Test all pages locally</li>
+  <li>⏳ Verify all links work</li>
+  <li>⏳ Test on mobile (browser dev tools)</li>
+  <li>⏳ Review all content for accuracy</li>
+</ol>
+
+<h3 id="deployment">Deployment:</h3>
+<ol>
+  <li>⏳ Create GitHub repository</li>
+  <li>⏳ Push code to GitHub</li>
+  <li>⏳ Enable GitHub Pages</li>
+  <li>⏳ Test deployed site</li>
+  <li>⏳ Configure custom domain DNS</li>
+  <li>⏳ Enable HTTPS</li>
+</ol>
+
+<h3 id="post-launch">Post-Launch:</h3>
+<ol>
+  <li>⏳ Add more blog posts</li>
+  <li>⏳ Consider adding contact form (Formspree)</li>
+  <li>⏳ Set up Google Analytics (optional)</li>
+  <li>⏳ Test across different browsers</li>
+  <li>⏳ Get feedback and iterate</li>
+</ol>
+
+<hr />
+
+<h2 id="-key-learnings--notes">💡 Key Learnings &amp; Notes</h2>
+
+<h3 id="rubyjekyll-gotchas">Ruby/Jekyll Gotchas:</h3>
+<ul>
+  <li>Ruby 4.x too new for most gems</li>
+  <li>github-pages gem requires Ruby &lt; 4.0</li>
+  <li>PATH must prioritize rbenv over system Ruby</li>
+  <li>Terminal restart required after PATH changes</li>
+  <li>Minima 2.5.1 is the version in github-pages, not latest</li>
+</ul>
+
+<h3 id="jekyll-theme-issues">Jekyll Theme Issues:</h3>
+<ul>
+  <li>Minima 2.5.1 doesn’t have skins feature</li>
+  <li>Custom templates in <code class="language-plaintext highlighter-rouge">_includes/</code> override theme defaults</li>
+  <li>CSS must be named <code class="language-plaintext highlighter-rouge">style.scss</code> for Minima</li>
+  <li>Simple <code class="language-plaintext highlighter-rouge">@import "minima";</code> works, complex imports don’t</li>
+</ul>
+
+<h3 id="file-format-notes">File Format Notes:</h3>
+<ul>
+  <li>AVIF is modern format (50% smaller than JPEG)</li>
+  <li>Wix uses AVIF for performance</li>
+  <li>Downloaded images will be JPEG/PNG/GIF</li>
+  <li>No need to use AVIF for this project - universal compatibility more important</li>
+</ul>
+
+<h3 id="development-workflow">Development Workflow:</h3>
+<ul>
+  <li>Always test locally before deploying</li>
+  <li>Use <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> not just <code class="language-plaintext highlighter-rouge">jekyll serve</code></li>
+  <li>Clear <code class="language-plaintext highlighter-rouge">_site</code> and <code class="language-plaintext highlighter-rouge">.jekyll-cache</code> if weird issues</li>
+  <li>Jekyll auto-reloads on file changes (but not _config.yml)</li>
+</ul>
+
+<hr />
+
+<h2 id="-contact-configuration">📞 Contact Configuration</h2>
+
+<p>Site configured with:</p>
+<ul>
+  <li><strong>Name:</strong> Bill Tubbs</li>
+  <li><strong>Company:</strong> B Tubbs &amp; Associates Consulting</li>
+  <li><strong>Tagline:</strong> Operations Management Consulting</li>
+  <li><strong>Location:</strong> Vancouver, BC, Canada</li>
+  <li><strong>Email:</strong> bill.tubbs@me.com</li>
+  <li><strong>Phone:</strong> +1 778 378 6539</li>
+  <li><strong>LinkedIn:</strong> https://www.linkedin.com/in/billtubbs/</li>
+  <li><strong>Domain:</strong> www.btubbsassociates.com</li>
+</ul>
+
+<hr />
+
+<h2 id="-commands-reference">🎓 Commands Reference</h2>
+
+<h3 id="jekyll-development">Jekyll Development:</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Install dependencies</span>
+bundle <span class="nb">install</span>
+
+<span class="c"># Run local server</span>
+bundle <span class="nb">exec </span>jekyll serve
+
+<span class="c"># Run on different port</span>
+bundle <span class="nb">exec </span>jekyll serve <span class="nt">--port</span> 4001
+
+<span class="c"># Clear cache</span>
+<span class="nb">rm</span> <span class="nt">-rf</span> _site .jekyll-cache
+
+<span class="c"># Build site (without server)</span>
+bundle <span class="nb">exec </span>jekyll build
+</code></pre></div></div>
+
+<h3 id="gitgithub">Git/GitHub:</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Initialize repo</span>
+git init
+
+<span class="c"># Stage all files</span>
+git add <span class="nb">.</span>
+
+<span class="c"># Commit</span>
+git commit <span class="nt">-m</span> <span class="s2">"message"</span>
+
+<span class="c"># Add remote</span>
+git remote add origin URL
+
+<span class="c"># Push</span>
+git push <span class="nt">-u</span> origin main
+
+<span class="c"># Check status</span>
+git status
+</code></pre></div></div>
+
+<h3 id="file-management">File Management:</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Create directory</span>
+<span class="nb">mkdir</span> <span class="nt">-p</span> _includes
+
+<span class="c"># Copy file</span>
+<span class="nb">cp </span>source.html destination.html
+
+<span class="c"># Move/rename file</span>
+<span class="nb">mv </span>old.scss new.scss
+
+<span class="c"># View file</span>
+<span class="nb">cat </span>filename
+
+<span class="c"># Edit file</span>
+nano filename  <span class="c"># or vim, or open in VS Code</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="-troubleshooting-quick-reference">🔍 Troubleshooting Quick Reference</h2>
+
+<h3 id="site-not-loading-colors">Site not loading colors?</h3>
+<ol>
+  <li>Check CSS filename is <code class="language-plaintext highlighter-rouge">style.scss</code> not <code class="language-plaintext highlighter-rouge">main.scss</code></li>
+  <li>Verify import is <code class="language-plaintext highlighter-rouge">@import "minima";</code> not the skins version</li>
+  <li>Clear cache: <code class="language-plaintext highlighter-rouge">rm -rf _site .jekyll-cache</code></li>
+  <li>Restart server</li>
+</ol>
+
+<h3 id="footer-showing-raw-yaml">Footer showing raw YAML?</h3>
+<ol>
+  <li>Create <code class="language-plaintext highlighter-rouge">_includes/</code> directory if missing</li>
+  <li>Add <code class="language-plaintext highlighter-rouge">footer.html</code> file provided</li>
+  <li>Restart Jekyll server</li>
+</ol>
+
+<h3 id="ruby-version-errors">Ruby version errors?</h3>
+<ol>
+  <li>Check version: <code class="language-plaintext highlighter-rouge">ruby -v</code> (should be 3.3.6)</li>
+  <li>If wrong version, check rbenv: <code class="language-plaintext highlighter-rouge">rbenv versions</code></li>
+  <li>Set local version: <code class="language-plaintext highlighter-rouge">rbenv local 3.3.6</code></li>
+  <li>Restart terminal completely</li>
+</ol>
+
+<h3 id="bundle-install-fails">Bundle install fails?</h3>
+<ol>
+  <li>Verify Ruby version is 3.3.x</li>
+  <li>Check Gemfile has github-pages gem</li>
+  <li>Try: <code class="language-plaintext highlighter-rouge">bundle update</code></li>
+  <li>Remove Gemfile.lock and retry</li>
+</ol>
+
+<h3 id="images-not-showing">Images not showing?</h3>
+<ol>
+  <li>Verify file paths match exactly (case-sensitive)</li>
+  <li>Check files are in correct directories</li>
+  <li>Use forward slashes (/) not backslashes ()</li>
+  <li>Test with browser developer tools</li>
+</ol>
+
+<hr />
+
+<h2 id="-project-timeline">📊 Project Timeline</h2>
+
+<p><strong>Started:</strong> Session began with Wix site exploration
+<strong>Platform Decision:</strong> Chose Jekyll + GitHub Pages
+<strong>Site Creation:</strong> Complete Jekyll structure built
+<strong>Branding:</strong> Color palette extracted and applied
+<strong>Environment:</strong> Ruby 3.3.6 installed via rbenv
+<strong>Testing:</strong> Local server running successfully
+<strong>Issues Found:</strong> Footer display, CSS loading
+<strong>Fixes Created:</strong> Custom templates and CSS corrections
+<strong>Current Status:</strong> Site functional, awaiting final fixes and images
+<strong>Next:</strong> Apply fixes, add images, deploy to GitHub Pages</p>
+
+<hr />
+
+<h2 id="-cost-savings">💰 Cost Savings</h2>
+
+<h3 id="before-wix">Before (Wix):</h3>
+<ul>
+  <li>Monthly: $16-35</li>
+  <li>Annual: $192-420</li>
+  <li>Vendor lock-in: High</li>
+  <li>Export options: Limited</li>
+</ul>
+
+<h3 id="after-jekyll--github-pages">After (Jekyll + GitHub Pages):</h3>
+<ul>
+  <li>Hosting: <strong>$0/year</strong></li>
+  <li>Domain: $12-15/year (already own)</li>
+  <li>Vendor lock-in: None</li>
+  <li>Export: Full ownership, Git version control</li>
+  <li><strong>Annual Savings: $180-405</strong></li>
+</ul>
+
+<hr />
+
+<h2 id="-success-criteria">🎯 Success Criteria</h2>
+
+<p>Site will be considered successfully migrated when:</p>
+<ul>
+  <li>✅ All 5 pages display correctly</li>
+  <li>✅ Brand colors visible throughout</li>
+  <li>✅ Footer shows formatted contact info (not raw YAML)</li>
+  <li>✅ All images display properly</li>
+  <li>✅ Links work and hover effects show</li>
+  <li>✅ Mobile responsive design works</li>
+  <li>✅ Blog functionality working</li>
+  <li>✅ Site deployed to GitHub Pages</li>
+  <li>✅ Custom domain configured and working</li>
+  <li>✅ HTTPS enabled</li>
+</ul>
+
+<p><strong>Current Progress: ~70% Complete</strong></p>
+<ul>
+  <li>Structure: ✅ Done</li>
+  <li>Content: ✅ Done</li>
+  <li>Branding: ✅ Done</li>
+  <li>Local Setup: ✅ Done</li>
+  <li>Bug Fixes: ⚠️ In Progress (fixes created, need to apply)</li>
+  <li>Images: ⏳ Pending</li>
+  <li>Deployment: ⏳ Pending</li>
+</ul>
+
+<hr />
+
+<h2 id="-additional-resources">📚 Additional Resources</h2>
+
+<h3 id="jekyll-documentation">Jekyll Documentation:</h3>
+<ul>
+  <li>Official Docs: https://jekyllrb.com/docs/</li>
+  <li>Minima Theme: https://github.com/jekyll/minima</li>
+  <li>Liquid Templating: https://shopify.github.io/liquid/</li>
+</ul>
+
+<h3 id="github-pages">GitHub Pages:</h3>
+<ul>
+  <li>Documentation: https://docs.github.com/pages</li>
+  <li>Custom Domains: https://docs.github.com/pages/configuring-a-custom-domain-for-your-github-pages-site</li>
+</ul>
+
+<h3 id="rubyrbenv">Ruby/rbenv:</h3>
+<ul>
+  <li>rbenv: https://github.com/rbenv/rbenv</li>
+  <li>Ruby Docs: https://www.ruby-lang.org/en/documentation/</li>
+</ul>
+
+<h3 id="markdown">Markdown:</h3>
+<ul>
+  <li>Guide: https://www.markdownguide.org/</li>
+  <li>Cheat Sheet: https://www.markdownguide.org/cheat-sheet/</li>
+</ul>
+
+<hr />
+
+<h2 id="-collaboration-context">🤝 Collaboration Context</h2>
+
+<p>This session involved:</p>
+<ul>
+  <li>Detailed technical troubleshooting</li>
+  <li>Multiple iterations on Ruby environment setup</li>
+  <li>Creating custom Jekyll templates</li>
+  <li>Extracting and applying brand colors</li>
+  <li>Comprehensive documentation creation</li>
+</ul>
+
+<h3 id="what-worked-well">What Worked Well:</h3>
+<ul>
+  <li>Systematic approach to problem-solving</li>
+  <li>Clear documentation of each step</li>
+  <li>Creating reusable fix files</li>
+  <li>Detailed image inventory</li>
+</ul>
+
+<h3 id="challenges-overcome">Challenges Overcome:</h3>
+<ul>
+  <li>Ruby 4.0 compatibility issues</li>
+  <li>Gemfile dependency conflicts</li>
+  <li>Minima theme version differences</li>
+  <li>CSS import problems</li>
+</ul>
+
+<hr />
+
+<h2 id="-files-to-share-with-future-claude-sessions">📝 Files to Share with Future Claude Sessions</h2>
+
+<p>If continuing this project with Claude in VS Code or Desktop:</p>
+
+<p><strong>Essential Files:</strong></p>
+<ol>
+  <li>This summary document</li>
+  <li>Current _config.yml</li>
+  <li>Current Gemfile</li>
+  <li>FIX_INSTRUCTIONS.md</li>
+  <li>IMAGE_SETUP.md</li>
+</ol>
+
+<p><strong>Context to Provide:</strong></p>
+<ul>
+  <li>Project is Jekyll site migration from Wix</li>
+  <li>Ruby 3.3.6 via rbenv</li>
+  <li>Using github-pages gem with Minima 2.5.1</li>
+  <li>Brand colors from PowerPoint palette</li>
+  <li>Three issues pending: footer, CSS loading, CSS import</li>
+</ul>
+
+<hr />
+
+<p><strong>END OF SESSION SUMMARY</strong>
+<strong>Total Time:</strong> Full session (~2 hours)
+<strong>Status:</strong> Site functional locally, awaiting final fixes before deployment
+<strong>Next Session:</strong> Apply fixes, add images, test, and deploy to GitHub Pages</p>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <h3>B Tubbs &amp; Associates Consulting</h3>
+        <p>Operations Management Consulting</p>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <h3>Contact</h3>
+        <ul class="contact-list">
+          <li>Vancouver, BC, Canada</li>
+          <li><a href="mailto:bill.tubbs@me.com">bill.tubbs@me.com</a></li>
+          <li>+1 778 378 6539</li>
+          <li><a href="https://www.linkedin.com/in/billtubbs/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>&copy; 2026 B Tubbs &amp; Associates Consulting</p>
+      </div>
+    </div>
+  </div>
+
+</footer>
+</body>
+
+</html>

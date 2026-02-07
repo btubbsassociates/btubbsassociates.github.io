@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg data-bbox="105 53 1403.31 780" overflow="hidden" xmlns="http://www.w3.org/2000/svg" height="912" width="1613" data-type="ugc">
+    <g>
+        <defs>
+            <clipPath id="2f5d238c-88d7-4a6b-a8f6-35f74990712f">
+                <path d="M1993 1210v912H380v-912h1613z"/>
+            </clipPath>
+        </defs>
+        <g transform="translate(-380 -1210)" clip-path="url(#2f5d238c-88d7-4a6b-a8f6-35f74990712f)">
+            <path fill="#AA9D89" d="M1342 1627v390h-52v-390h52z"/>
+            <path fill="#AA9D89" d="M1836 1861v182h-364v-182h364z"/>
+            <path fill="none" stroke-miterlimit="8" stroke-width="13.75" stroke="#AA9D89" d="M485 1991h1403.31"/>
+            <path fill="none" stroke-miterlimit="8" stroke-width="13.75" stroke="#AA9D89" d="M1264.88 1783h-233.884"/>
+            <path fill="none" stroke-miterlimit="8" stroke-width="13.75" stroke="#AA9D89" d="M1264 1757v285.86"/>
+            <path fill="none" stroke-miterlimit="8" stroke-width="13.75" stroke="#AA9D89" d="M1031 1757v285.86"/>
+            <path fill-rule="evenodd" fill="#AA9D89" d="m1472 1861 182-52 182 52Z"/>
+            <path fill-rule="evenodd" fill="#AA9D89" d="M1083 1770c0-35.9 28.88-65 64.5-65 35.62 0 64.5 29.1 64.5 65s-28.88 65-64.5 65c-35.62 0-64.5-29.1-64.5-65Z"/>
+            <path fill-rule="evenodd" fill="#AA9D89" d="M1290 1627c0-14.36 11.64-26 26-26s26 11.64 26 26-11.64 26-26 26-26-11.64-26-26Z"/>
+            <path fill="#AA9D89" d="M823 1809v234H537v-234h286z"/>
+            <path fill="none" stroke-miterlimit="8" stroke-width="13.75" stroke="#AA9D89" d="M1264.81 1939H875.003"/>
+            <path fill="#AA9D89" d="M901 1783v234H641v-234h260z"/>
+            <path fill="#AA9D89" d="M1161 1679v29h-26v-29h26z"/>
+            <path fill="#AA9D89" d="M1083 1679v182h-26v-182h26z"/>
+            <path fill-rule="evenodd" fill="#AA9D89" d="M1057 1679c0-28.72 23.28-52 52-52s52 23.28 52 52h-26c0-14.36-11.64-26-26-26s-26 11.64-26 26Z"/>
+            <path fill="#AA9D89" d="M1109 1887v26H875v-26h234z"/>
+            <path fill="#AA9D89" d="M1238 1263v754h-26v-754h26z"/>
+            <path fill-rule="evenodd" fill="#AA9D89" d="M1264 1887c0-28.72 23.28-52 52-52s52 23.28 52 52-23.28 52-52 52-52-23.28-52-52Z"/>
+            <path fill="#AA9D89" d="M1316 1835v104h-259v-104h259z"/>
+            <path fill-rule="evenodd" fill="#AA9D89" d="M1005 1887c0-28.72 23.28-52 52-52s52 23.28 52 52-23.28 52-52 52-52-23.28-52-52Z"/>
+            <path fill="none" stroke-miterlimit="8" stroke-width="13.75" stroke="#AA9D89" d="M1471.9 1939h-207.897"/>
+            <path fill="none" stroke-miterlimit="8" stroke-width="13.75" stroke="#AA9D89" d="m1031 1783 233.88 233.88"/>
+            <path fill="none" stroke-miterlimit="8" stroke-width="13.75" stroke="#AA9D89" d="m1031 2016.88 233.884-233.884"/>
+            <path fill="#AA9D89" d="M1264 1913v104h-77v-104h77z"/>
+            <path fill-rule="evenodd" fill="#AA9D89" d="m1187 1913 38.5-52 38.5 52Z"/>
+        </g>
+    </g>
+</svg>

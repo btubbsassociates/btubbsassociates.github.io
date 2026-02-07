@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Fixing Footer and Colors | B Tubbs &amp; Associates Consulting</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Fixing Footer and Colors" />
+<meta name="author" content="Bill Tubbs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Operations Management Consulting" />
+<meta property="og:description" content="Operations Management Consulting" />
+<link rel="canonical" href="http://localhost:4000/dev_guides/FIX_INSTRUCTIONS.html" />
+<meta property="og:url" content="http://localhost:4000/dev_guides/FIX_INSTRUCTIONS.html" />
+<meta property="og:site_name" content="B Tubbs &amp; Associates Consulting" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Fixing Footer and Colors" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Bill Tubbs"},"description":"Operations Management Consulting","headline":"Fixing Footer and Colors","url":"http://localhost:4000/dev_guides/FIX_INSTRUCTIONS.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="B Tubbs &amp; Associates Consulting" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">B Tubbs &amp; Associates Consulting</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/">Home</a><a class="page-link" href="/services/">Services</a><a class="page-link" href="/testimonials/">Testimonials</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/contact/">Contact</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1 id="fixing-footer-and-colors">Fixing Footer and Colors</h1>
+
+<h2 id="the-problems">The Problems</h2>
+
+<ol>
+  <li><strong>Footer showing raw YAML data</strong> - The default Minima theme doesn’t properly format custom author fields</li>
+  <li><strong>No colors visible</strong> - The CSS file needs to be named <code class="language-plaintext highlighter-rouge">style.scss</code> not <code class="language-plaintext highlighter-rouge">main.scss</code></li>
+</ol>
+
+<h2 id="the-fixes">The Fixes</h2>
+
+<h3 id="step-1-create-_includes-folder">Step 1: Create _includes folder</h3>
+
+<p>In your <code class="language-plaintext highlighter-rouge">btubbsassociates</code> folder, create the following structure:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>btubbsassociates/
+├── _includes/
+│   ├── footer.html
+│   └── head.html
+</code></pre></div></div>
+
+<p>Copy the files I provided into this folder.</p>
+
+<h3 id="step-2-fix-css-filename">Step 2: Fix CSS filename</h3>
+
+<p>Rename your CSS file:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> ~/btubbsassociates
+<span class="nb">mv </span>assets/css/main.scss assets/css/style.scss
+</code></pre></div></div>
+
+<p>OR delete the old one and use the new one I provided:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">rm </span>assets/css/main.scss
+<span class="c"># Then copy the style.scss file I provided to assets/css/</span>
+</code></pre></div></div>
+
+<h3 id="step-3-stop-and-restart-jekyll">Step 3: Stop and restart Jekyll</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Stop Jekyll (Ctrl+C if it's running)</span>
+
+<span class="c"># Restart it</span>
+bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div></div>
+
+<h2 id="quick-copy-paste-method">Quick Copy-Paste Method</h2>
+
+<p>If you downloaded the fix files, run these commands in Terminal:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Navigate to your site folder</span>
+<span class="nb">cd</span> ~/btubbsassociates
+
+<span class="c"># Create _includes directory if it doesn't exist</span>
+<span class="nb">mkdir</span> <span class="nt">-p</span> _includes
+
+<span class="c"># Copy the footer.html</span>
+<span class="nb">cp</span> ~/Downloads/_includes/footer.html _includes/
+
+<span class="c"># Copy the head.html  </span>
+<span class="nb">cp</span> ~/Downloads/_includes/head.html _includes/
+
+<span class="c"># Rename or replace the CSS file</span>
+<span class="nb">mv </span>assets/css/main.scss assets/css/main.scss.backup
+<span class="nb">cp</span> ~/Downloads/btubbs-css-fix/css/style.scss assets/css/
+
+<span class="c"># Restart Jekyll</span>
+bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div></div>
+
+<h2 id="what-changed">What Changed</h2>
+
+<h3 id="footer-footerhtml">Footer (footer.html)</h3>
+<ul>
+  <li>Properly formats contact information</li>
+  <li>Shows location, email, phone, LinkedIn link</li>
+  <li>Uses proper HTML structure</li>
+  <li>Your brand colors applied</li>
+</ul>
+
+<h3 id="head-headhtml">Head (head.html)</h3>
+<ul>
+  <li>Ensures CSS loads correctly</li>
+  <li>Points to the correct stylesheet path</li>
+</ul>
+
+<h3 id="css-stylescss">CSS (style.scss)</h3>
+<ul>
+  <li>Renamed from main.scss to style.scss (required by Minima theme)</li>
+  <li>All your brand colors are now active</li>
+  <li>Hero section has colored overlay</li>
+  <li>Service cards have colored borders</li>
+  <li>Links use your blue-gray colors</li>
+  <li>Footer uses your dark brand color</li>
+</ul>
+
+<h2 id="after-applying-fixes">After Applying Fixes</h2>
+
+<p>You should now see:</p>
+
+<p>✅ <strong>Footer properly formatted</strong> with:</p>
+<ul>
+  <li>Your company name</li>
+  <li>Contact info in a clean list</li>
+  <li>Links styled in your brand colors</li>
+</ul>
+
+<p>✅ <strong>Colors throughout</strong> the site:</p>
+<ul>
+  <li>Dark blue-gray headers</li>
+  <li>Medium blue-gray links</li>
+  <li>Colored borders on cards</li>
+  <li>Branded footer with dark background</li>
+  <li>Hero section with colored overlay</li>
+</ul>
+
+<h2 id="verify-it-worked">Verify It Worked</h2>
+
+<p>Visit http://localhost:4000 and check:</p>
+
+<ol>
+  <li>Scroll to footer - should show clean contact info, not raw YAML</li>
+  <li>Look at service cards - should have blue-gray borders</li>
+  <li>Hover over links - should change to lighter blue-gray</li>
+  <li>Check hero section - should have dark overlay</li>
+  <li>Footer background should be dark blue-gray</li>
+</ol>
+
+<h2 id="if-colors-still-dont-show">If Colors Still Don’t Show</h2>
+
+<p>Try this:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Clear Jekyll cache</span>
+<span class="nb">rm</span> <span class="nt">-rf</span> _site .jekyll-cache
+
+<span class="c"># Restart</span>
+bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div></div>
+
+<p>Sometimes Jekyll caches the old CSS and needs a fresh start.</p>
+
+<h2 id="file-locations-summary">File Locations Summary</h2>
+
+<p>Make sure you have these files:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>btubbsassociates/
+├── _includes/
+│   ├── footer.html      ← NEW: Custom footer
+│   └── head.html        ← NEW: Custom head
+├── assets/
+│   └── css/
+│       └── style.scss   ← RENAMED: Was main.scss
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">_includes</code> folder overrides Minima’s default templates, so your custom footer and CSS will be used instead.</p>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <h3>B Tubbs &amp; Associates Consulting</h3>
+        <p>Operations Management Consulting</p>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <h3>Contact</h3>
+        <ul class="contact-list">
+          <li>Vancouver, BC, Canada</li>
+          <li><a href="mailto:bill.tubbs@me.com">bill.tubbs@me.com</a></li>
+          <li>+1 778 378 6539</li>
+          <li><a href="https://www.linkedin.com/in/billtubbs/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>&copy; 2026 B Tubbs &amp; Associates Consulting</p>
+      </div>
+    </div>
+  </div>
+
+</footer>
+</body>
+
+</html>

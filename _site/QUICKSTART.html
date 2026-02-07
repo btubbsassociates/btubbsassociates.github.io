@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Quick Start Guide | B Tubbs &amp; Associates Consulting</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Quick Start Guide" />
+<meta name="author" content="Bill Tubbs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Operations Management Consulting" />
+<meta property="og:description" content="Operations Management Consulting" />
+<link rel="canonical" href="http://localhost:4000/QUICKSTART.html" />
+<meta property="og:url" content="http://localhost:4000/QUICKSTART.html" />
+<meta property="og:site_name" content="B Tubbs &amp; Associates Consulting" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Quick Start Guide" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Bill Tubbs"},"description":"Operations Management Consulting","headline":"Quick Start Guide","url":"http://localhost:4000/QUICKSTART.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="B Tubbs &amp; Associates Consulting" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">B Tubbs &amp; Associates Consulting</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/">Home</a><a class="page-link" href="/services/">Services</a><a class="page-link" href="/testimonials/">Testimonials</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/contact/">Contact</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h1 id="quick-start-guide">Quick Start Guide</h1>
+
+<h2 id="1️⃣-extract-and-open-in-vs-code">1️⃣ Extract and Open in VS Code</h2>
+
+<ol>
+  <li>Extract the <code class="language-plaintext highlighter-rouge">btubbs-jekyll-site</code> folder</li>
+  <li>Open VS Code</li>
+  <li>File → Open Folder → Select <code class="language-plaintext highlighter-rouge">btubbs-jekyll-site</code></li>
+</ol>
+
+<h2 id="2️⃣-add-your-images">2️⃣ Add Your Images</h2>
+
+<p>Follow the instructions in <code class="language-plaintext highlighter-rouge">IMAGE_SETUP.md</code> to copy your Wix images into the correct folders.</p>
+
+<h2 id="3️⃣-install-jekyll-first-time-only">3️⃣ Install Jekyll (First Time Only)</h2>
+
+<p><strong>macOS:</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Install Homebrew if you don't have it</span>
+/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="si">)</span><span class="s2">"</span>
+
+<span class="c"># Install Ruby</span>
+brew <span class="nb">install </span>ruby
+
+<span class="c"># Add Ruby to PATH (add to ~/.zshrc or ~/.bash_profile)</span>
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"/usr/local/opt/ruby/bin:</span><span class="nv">$PATH</span><span class="s2">"</span>
+
+<span class="c"># Install Bundler</span>
+gem <span class="nb">install </span>bundler
+</code></pre></div></div>
+
+<p><strong>Windows:</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Install Ruby using RubyInstaller</span>
+<span class="c"># Download from: https://rubyinstaller.org/</span>
+<span class="c"># Choose Ruby+Devkit version</span>
+<span class="c"># Run the installer and select "Add Ruby to PATH"</span>
+
+<span class="c"># After installation, open Command Prompt and run:</span>
+gem <span class="nb">install </span>bundler
+</code></pre></div></div>
+
+<h2 id="4️⃣-install-dependencies">4️⃣ Install Dependencies</h2>
+
+<p>In VS Code terminal (or any terminal in the site directory):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>btubbs-jekyll-site
+bundle <span class="nb">install</span>
+</code></pre></div></div>
+
+<h2 id="5️⃣-run-locally">5️⃣ Run Locally</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div></div>
+
+<p>Open browser to: http://localhost:4000</p>
+
+<p>The site will auto-reload when you make changes!</p>
+
+<h2 id="6️⃣-make-changes">6️⃣ Make Changes</h2>
+
+<ul>
+  <li>Edit <code class="language-plaintext highlighter-rouge">.md</code> files to change content</li>
+  <li>Edit <code class="language-plaintext highlighter-rouge">_config.yml</code> to change site settings</li>
+  <li>Add blog posts to <code class="language-plaintext highlighter-rouge">_posts/</code> folder</li>
+  <li>Customize colors in <code class="language-plaintext highlighter-rouge">assets/css/main.scss</code></li>
+</ul>
+
+<h2 id="7️⃣-deploy-to-github-pages">7️⃣ Deploy to GitHub Pages</h2>
+
+<h3 id="first-time-setup">First Time Setup:</h3>
+
+<ol>
+  <li>
+    <p><strong>Create GitHub account</strong> (if you don’t have one): https://github.com/join</p>
+  </li>
+  <li><strong>Create new repository:</strong>
+    <ul>
+      <li>Go to: https://github.com/new</li>
+      <li>Repository name: <code class="language-plaintext highlighter-rouge">yourusername.github.io</code> (replace yourusername)</li>
+      <li>Make it Public</li>
+      <li>Don’t initialize with README</li>
+    </ul>
+  </li>
+  <li><strong>In VS Code terminal, run these commands:</strong></li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Initialize git</span>
+git init
+
+<span class="c"># Add all files</span>
+git add <span class="nb">.</span>
+
+<span class="c"># Make first commit</span>
+git commit <span class="nt">-m</span> <span class="s2">"Initial commit - B Tubbs &amp; Associates website"</span>
+
+<span class="c"># Set main branch</span>
+git branch <span class="nt">-M</span> main
+
+<span class="c"># Add your GitHub repository (replace with YOUR username)</span>
+git remote add origin https://github.com/yourusername/yourusername.github.io.git
+
+<span class="c"># Push to GitHub</span>
+git push <span class="nt">-u</span> origin main
+</code></pre></div></div>
+
+<ol>
+  <li><strong>Enable GitHub Pages:</strong>
+    <ul>
+      <li>Go to your repository on GitHub</li>
+      <li>Click Settings → Pages</li>
+      <li>Source: Deploy from branch <code class="language-plaintext highlighter-rouge">main</code> / folder <code class="language-plaintext highlighter-rouge">/ (root)</code></li>
+      <li>Click Save</li>
+    </ul>
+  </li>
+  <li><strong>Wait 2-5 minutes</strong>, then visit: <code class="language-plaintext highlighter-rouge">https://yourusername.github.io</code></li>
+</ol>
+
+<h3 id="updating-your-site">Updating Your Site:</h3>
+
+<p>After making changes:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nb">.</span>
+git commit <span class="nt">-m</span> <span class="s2">"Description of what you changed"</span>
+git push
+</code></pre></div></div>
+
+<p>GitHub will automatically rebuild and deploy (takes 2-5 minutes).</p>
+
+<h2 id="8️⃣-set-up-custom-domain-optional">8️⃣ Set Up Custom Domain (Optional)</h2>
+
+<p>Once the basic site is working:</p>
+
+<ol>
+  <li><strong>In GitHub repository → Settings → Pages:</strong>
+    <ul>
+      <li>Custom domain: <code class="language-plaintext highlighter-rouge">www.btubbsassociates.com</code></li>
+      <li>Save</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Update DNS at your domain registrar:</strong></p>
+
+    <p>Add CNAME record:</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Type: CNAME
+Name: www
+Value: yourusername.github.io
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Wait for DNS propagation</strong> (1-24 hours)</p>
+  </li>
+  <li><strong>Enable HTTPS</strong> in GitHub Pages settings</li>
+</ol>
+
+<p>Full DNS instructions are in README.md</p>
+
+<h2 id="-common-issues">🆘 Common Issues</h2>
+
+<p><strong>“Bundle not found”</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>bundler
+bundle <span class="nb">install</span>
+</code></pre></div></div>
+
+<p><strong>Port 4000 already in use</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll serve <span class="nt">--port</span> 4001
+</code></pre></div></div>
+
+<p><strong>Images not showing locally</strong></p>
+<ul>
+  <li>Check file paths are correct</li>
+  <li>File names are case-sensitive</li>
+  <li>Use forward slashes (/) not backslashes ()</li>
+</ul>
+
+<p><strong>Site not deploying to GitHub</strong></p>
+<ul>
+  <li>Check GitHub Actions tab for errors</li>
+  <li>Verify _config.yml has no syntax errors</li>
+  <li>Make sure all files are committed and pushed</li>
+</ul>
+
+<h2 id="-learn-more">📚 Learn More</h2>
+
+<ul>
+  <li>Jekyll Docs: https://jekyllrb.com/docs/</li>
+  <li>GitHub Pages: https://docs.github.com/pages</li>
+  <li>Markdown Guide: https://www.markdownguide.org/</li>
+</ul>
+
+<h2 id="-checklist">✅ Checklist</h2>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Extracted site folder</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Opened in VS Code</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Added all images</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Installed Ruby and Bundler</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Ran <code class="language-plaintext highlighter-rouge">bundle install</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Tested locally with <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Created GitHub repository</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Pushed to GitHub</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Enabled GitHub Pages</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Site is live!</li>
+</ul>
+
+<hr />
+
+<p><strong>Need help?</strong> Check README.md for detailed instructions or troubleshooting.</p>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <h3>B Tubbs &amp; Associates Consulting</h3>
+        <p>Operations Management Consulting</p>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <h3>Contact</h3>
+        <ul class="contact-list">
+          <li>Vancouver, BC, Canada</li>
+          <li><a href="mailto:bill.tubbs@me.com">bill.tubbs@me.com</a></li>
+          <li>+1 778 378 6539</li>
+          <li><a href="https://www.linkedin.com/in/billtubbs/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>&copy; 2026 B Tubbs &amp; Associates Consulting</p>
+      </div>
+    </div>
+  </div>
+
+</footer>
+</body>
+
+</html>
