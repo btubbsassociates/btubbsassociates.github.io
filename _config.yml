@@ -13,6 +13,9 @@ author:
   location: "Vancouver, BC, Canada"
   linkedin: "https://www.linkedin.com/in/billtubbs/"
 
+# Post URL structure (matches old Wix URLs)
+permalink: /post/:title
+
 # Build Settings
 markdown: kramdown
 theme: minima
