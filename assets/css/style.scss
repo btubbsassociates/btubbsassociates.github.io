@@ -513,6 +513,12 @@ a:hover {
   gap: 30px;
 }
 
+/* Let each column fill its grid cell (overrides Minima's percentage widths) */
+.site-footer .footer-col {
+  float: none;
+  width: auto;
+}
+
 /* Header/Navigation */
 .site-header {
   border-bottom: 2px solid var(--brand-secondary);
