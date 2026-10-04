@@ -34,32 +34,5 @@ permalink: /contact/
         </div>
       </div>
     </div>
-    
-    <div class="contact-form-section">
-      <h2>Send a Message</h2>
-      <p class="form-note">Note: You'll need to add a form service like Formspree or use a contact form plugin. For now, visitors can use the email/phone above.</p>
-      
-      <!-- Optional: Add Formspree or similar service -->
-      <!-- 
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="_replyto" required>
-        </div>
-        
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        
-        <button type="submit" class="btn btn-primary">Send Message</button>
-      </form>
-      -->
-    </div>
   </div>
 </div>
