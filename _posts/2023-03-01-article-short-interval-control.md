@@ -51,7 +51,7 @@ Most organizations have implemented some form of loss accounting—the practice 
 
 In practice, production losses are usually calculated and reported by the production supervisor at the end of a shift or 24-hour period. While the supervisor has more experience and knowledge than a typical operator, they will not have the first-hand experience that an operator has of what was going on throughout the plant over the course of the shift. This is where a review of the completed SIC with the control room operator at the end of the shift is valuable. Not only is it a chance for the supervisor to question or challenge the information on performance, it shows operators that they have a direct and valuable role in performance management. It's not "something that the supervisor does at the end of the shift."
 
-The benefits to operators are just the tip of the iceberg in terms of what SIC enables when integrated into an organization's loss accounting and performance management systems. In a future article I will introduce the concept of a choke model, which is used to decide where in the production process to install SIC.
+The benefits to operators are just the tip of the iceberg in terms of what SIC enables when integrated into an organization's loss accounting and performance management systems. In a future article I will introduce the concept of a [choke model](/post/article-choke-model), which is used to decide where in the production process to install SIC.
 
 ## In summary
 
