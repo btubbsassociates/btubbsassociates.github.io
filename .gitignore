@@ -2,3 +2,5 @@ dev_guides
 media
 
 .DS_Store
+_site/
+.jekyll-cache/

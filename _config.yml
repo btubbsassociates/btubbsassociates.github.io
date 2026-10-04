@@ -4,13 +4,14 @@ description: "Operations Management Consulting"
 tagline: "I work with large industrial producers to identify and unlock performance improvements in their operations."
 url: "https://www.btubbsassociates.com"
 baseurl: "" # Leave empty for custom domain or root deployment
+timezone: America/Edmonton
 
 # Author Information
 author:
   name: "Bill Tubbs"
   email: "bill.tubbs@me.com"
   phone: "+1 778 378 6539"
-  location: "Vancouver, BC, Canada"
+  location: "Calgary, AB, Canada"
   linkedin: "https://www.linkedin.com/in/billtubbs/"
 
 # Post URL structure (matches old Wix URLs)
@@ -42,6 +43,12 @@ exclude:
   - vendor/ruby/
   - README.md
   - LICENSE
+  # Private notes and source files (not part of the website)
+  - dev_guides
+  - media
+  - BRAND_COLORS.md
+  - IMAGE_SETUP.md
+  - QUICKSTART.md
 
 # Default values
 defaults:
