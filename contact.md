@@ -11,7 +11,7 @@ permalink: /contact/
     <div class="contact-info">
       <h2>Get in Touch</h2>
       <p>Interested in learning how I can help optimize your operations? Let's discuss your challenges and opportunities.</p>
-      
+
       <div class="contact-details">
         <div class="contact-item">
           <h3>Location</h3>

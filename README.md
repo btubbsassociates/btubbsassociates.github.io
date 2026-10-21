@@ -2,8 +2,8 @@
 
 Professional consulting website built with Jekyll and deployed on GitHub Pages.
 
-- **Live site:** https://btubbsassociates.com
-- **Repository:** https://github.com/btubbsassociates/btubbsassociates.github.io
+- **Live site:** <https://btubbsassociates.com>
+- **Repository:** <https://github.com/btubbsassociates/btubbsassociates.github.io>
 
 ## 🚀 Quick Start
 
@@ -16,17 +16,19 @@ Professional consulting website built with Jekyll and deployed on GitHub Pages.
 ### Local Development
 
 1. **Install dependencies:**
+
    ```bash
    bundle install
    ```
 
 2. **Run locally:**
+
    ```bash
    bundle exec jekyll serve
    ```
 
 3. **View in browser:**
-   Open http://localhost:4000
+   Open <http://localhost:4000>
 
 4. **Make changes:**
    - Edit content in `.md` files
@@ -36,7 +38,7 @@ Professional consulting website built with Jekyll and deployed on GitHub Pages.
 
 ## 📁 Project Structure
 
-```
+```text
 btubbsassociates/
 ├── _config.yml              # Site configuration
 ├── _includes/               # Reusable page fragments
@@ -94,13 +96,15 @@ All main pages are Markdown files (`.md`). Edit them with any text editor:
 ### Adding Blog Posts
 
 Create new files in `_posts/` folder with this naming format:
-```
+
+```text
 YYYY-MM-DD-title-of-post.md
 ```
 
 Posts are published at `/post/<title>` (e.g. `_posts/2023-03-19-article-choke-model.md` → `/post/article-choke-model`), matching the old Wix URLs. Link between posts using these paths.
 
 Example post format:
+
 ```markdown
 ---
 layout: post
@@ -121,6 +125,7 @@ Put post images in `assets/images/blog/` using descriptive, hyphenated file name
 ### Updating Site Information
 
 Edit `_config.yml` to update:
+
 - Site title, description and tagline
 - Contact details (email, phone, location, LinkedIn URL) — these appear in the footer
 - Navigation menu (`header_pages`)
@@ -131,6 +136,7 @@ Edit `_config.yml` to update:
 ### Colors
 
 Brand colours are defined as CSS variables at the top of `assets/css/style.scss` (see also `BRAND_COLORS.md`):
+
 ```css
 :root {
   --brand-primary: #262f33;      /* Dark blue-gray (darkest) */
@@ -148,7 +154,7 @@ Brand colours are defined as CSS variables at the top of `assets/css/style.scss`
 
 ## 🌐 Deployment
 
-The site is already deployed on GitHub Pages from the `main` branch of this repository, and the domain https://btubbsassociates.com (set in the `CNAME` file) points to it. No further setup is needed — pushing to `main` publishes changes.
+The site is already deployed on GitHub Pages from the `main` branch of this repository, and the domain <https://btubbsassociates.com> (set in the `CNAME` file) points to it. No further setup is needed — pushing to `main` publishes changes.
 
 ### Updating the Site
 
@@ -168,25 +174,29 @@ git push
 ## 🛠️ Troubleshooting
 
 ### Site not building?
+
 - Check GitHub Actions tab in your repository for build errors
 - Verify `_config.yml` syntax (YAML is whitespace-sensitive)
 - Make sure all required gems are in Gemfile
 
 ### Images not showing?
+
 - Check file paths match exactly (case-sensitive)
 - Verify images are in `assets/images/` directory
 - Check image file extensions (.jpg vs .jpeg)
 
 ### Custom domain not working?
+
 - Verify DNS records are correct
 - Check GitHub Pages settings show "DNS check successful"
 
 ## 📞 Support
 
 For questions or issues:
+
 - Edit files in VS Code and test locally first
-- Check Jekyll documentation: https://jekyllrb.com/docs/
-- Check GitHub Pages docs: https://docs.github.com/pages
+- Check Jekyll documentation: <https://jekyllrb.com/docs/>
+- Check GitHub Pages docs: <https://docs.github.com/pages>
 
 ## 📄 License
 

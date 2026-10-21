@@ -9,7 +9,7 @@ permalink: /testimonials/
   <p class="intro">What clients say about working with B Tubbs & Associates Consulting</p>
 
   <div class="testimonials-grid">
-    
+
     <div class="testimonial-card">
       <img src="{{ '/assets/images/testimonials/icon-oil-gas.gif' | relative_url }}" alt="Oil & Gas" class="testimonial-icon">
       <h3>Director of Data Science</h3>
