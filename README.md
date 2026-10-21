@@ -2,11 +2,14 @@
 
 Professional consulting website built with Jekyll and deployed on GitHub Pages.
 
+- **Live site:** https://btubbsassociates.com
+- **Repository:** https://github.com/btubbsassociates/btubbsassociates.github.io
+
 ## 🚀 Quick Start
 
 ### Prerequisites
 
-- Ruby 2.7 or higher
+- Ruby 3.3.6 (see `.ruby-version`)
 - Bundler gem
 - Git
 
@@ -17,43 +20,44 @@ Professional consulting website built with Jekyll and deployed on GitHub Pages.
    bundle install
    ```
 
-2. **Add your images:**
-   - Copy your downloaded Wix images to the appropriate folders:
-     - `assets/images/hero-background.jpg` - Hero background image
-     - `assets/images/bill-tubbs-photo.jpg` - Your professional photo
-     - `assets/images/services/` - Service page images (5 images)
-     - `assets/images/testimonials/` - Testimonial icons (2 .gif files)
-     - `assets/images/icons/linkedin.png` - LinkedIn icon
-
-3. **Run locally:**
+2. **Run locally:**
    ```bash
    bundle exec jekyll serve
    ```
 
-4. **View in browser:**
+3. **View in browser:**
    Open http://localhost:4000
 
-5. **Make changes:**
+4. **Make changes:**
    - Edit content in `.md` files
-   - Customize styles in `assets/css/main.scss`
+   - Customize styles in `assets/css/style.scss`
    - Add blog posts in `_posts/` folder
-   - The site will auto-reload when you save changes
+   - The site will auto-reload when you save changes (except `_config.yml`, which needs a server restart)
 
 ## 📁 Project Structure
 
 ```
-btubbs-jekyll-site/
+btubbsassociates/
 ├── _config.yml              # Site configuration
+├── _includes/               # Reusable page fragments
+│   ├── head.html
+│   └── footer.html
 ├── _layouts/                # Custom layouts
 │   └── home.html
 ├── _posts/                  # Blog posts
-│   └── 2024-01-15-welcome.md
+│   ├── 2023-03-01-welcome.md
+│   ├── 2023-03-01-article-short-interval-control.md
+│   ├── 2023-03-19-article-choke-model.md
+│   ├── 2023-04-22-article-loss-accounting.md
+│   ├── 2023-07-09-article-short-interval-control-for-management.md
+│   └── 2024-06-16-3-2-1-reporting-control-the-whole-by-controlling-the-parts.md
 ├── assets/
 │   ├── css/
-│   │   └── main.scss        # Custom styles
-│   └── images/              # Your images go here
+│   │   └── style.scss       # Custom styles
+│   └── images/
 │       ├── hero-background.jpg
 │       ├── bill-tubbs-photo.jpg
+│       ├── blog/            # Blog post images and diagrams
 │       ├── services/
 │       ├── testimonials/
 │       └── icons/
@@ -62,9 +66,18 @@ btubbs-jekyll-site/
 ├── testimonials.md          # Testimonials page
 ├── blog.md                  # Blog page
 ├── contact.md               # Contact page
+├── CNAME                    # Custom domain for GitHub Pages
 ├── Gemfile                  # Ruby dependencies
-└── README.md                # This file
+├── Gemfile.lock
+├── BRAND_COLORS.md          # Brand colour reference
+├── IMAGE_SETUP.md           # Image setup guide
+├── QUICKSTART.md            # Quick start guide
+├── README.md                # This file
+├── dev_guides/              # Development notes (git-ignored)
+└── media/                   # Original source images (git-ignored)
 ```
+
+`README.md`, the other guide files, `dev_guides/` and `media/` are excluded from the site build in `_config.yml`.
 
 ## 📝 Content Management
 
@@ -85,136 +98,69 @@ Create new files in `_posts/` folder with this naming format:
 YYYY-MM-DD-title-of-post.md
 ```
 
+Posts are published at `/post/<title>` (e.g. `_posts/2023-03-19-article-choke-model.md` → `/post/article-choke-model`), matching the old Wix URLs. Link between posts using these paths.
+
 Example post format:
 ```markdown
 ---
 layout: post
 title: "Your Post Title"
-date: 2024-01-15 10:00:00 -0800
-categories: operations optimization
+date: 2024-06-16 16:20:00 -0700
+categories: operations-management
 ---
 
 Your content here...
+
+![Descriptive alt text for the image.](/assets/images/blog/your-image.png)
 ```
+
+`layout: post` and `author: "Bill Tubbs"` are applied by default (see `defaults` in `_config.yml`), so they can be omitted.
+
+Put post images in `assets/images/blog/` using descriptive, hyphenated file names, and give every image alt text.
 
 ### Updating Site Information
 
 Edit `_config.yml` to update:
-- Site title and description
-- Your contact information
-- LinkedIn URL
+- Site title, description and tagline
+- Contact details (email, phone, location, LinkedIn URL) — these appear in the footer
+- Navigation menu (`header_pages`)
 - Other site-wide settings
 
 ## 🎨 Customization
 
 ### Colors
 
-Edit `assets/css/main.scss` to change colors:
+Brand colours are defined as CSS variables at the top of `assets/css/style.scss` (see also `BRAND_COLORS.md`):
 ```css
 :root {
-  --primary-color: #2c5aa0;      /* Main brand color */
-  --secondary-color: #4a90e2;    /* Accent color */
-  --dark-gray: #333333;          /* Text color */
+  --brand-primary: #262f33;      /* Dark blue-gray (darkest) */
+  --brand-secondary: #617b82;    /* Medium blue-gray */
+  --brand-accent: #637b83;       /* Light blue-gray */
+  --brand-dark: #233237;         /* Very dark blue-gray */
+  --brand-light: #66797f;        /* Lighter blue-gray */
 }
 ```
 
 ### Layout
 
-- Modify `_layouts/` files to change page structure
-- Edit `_config.yml` for navigation menu changes
+- The site uses the `minima` theme, with overrides in `_layouts/` and `_includes/`
+- Edit `header_pages` in `_config.yml` to change the navigation menu
 
-## 🌐 Deploying to GitHub Pages
+## 🌐 Deployment
 
-### Option 1: GitHub.com Repository (Recommended)
+The site is hosted on GitHub Pages from the `main` branch (root folder) of the `btubbsassociates/btubbsassociates.github.io` repository.
 
-1. **Create a new repository on GitHub:**
-   - Go to https://github.com/new
-   - Name it: `yourusername.github.io` (replace with your GitHub username)
-   - Make it public
-   - Don't initialize with README (we already have one)
+The custom domain `btubbsassociates.com` is set in the `CNAME` file. DNS is configured with the registrar as follows:
 
-2. **Initialize Git and push:**
-   ```bash
-   cd btubbs-jekyll-site
-   git init
-   git add .
-   git commit -m "Initial commit - B Tubbs & Associates website"
-   git branch -M main
-   git remote add origin https://github.com/yourusername/yourusername.github.io.git
-   git push -u origin main
-   ```
+```
+Type: A      Name: @    Value: 185.199.108.153
+Type: A      Name: @    Value: 185.199.109.153
+Type: A      Name: @    Value: 185.199.110.153
+Type: A      Name: @    Value: 185.199.111.153
+Type: CNAME  Name: www  Value: btubbsassociates.github.io
+```
 
-3. **Enable GitHub Pages:**
-   - Go to your repository on GitHub
-   - Click "Settings" → "Pages"
-   - Under "Source", select "Deploy from a branch"
-   - Select branch: `main` and folder: `/ (root)`
-   - Click "Save"
-
-4. **Wait for deployment:**
-   - GitHub will build your site (takes 2-5 minutes)
-   - Your site will be live at: `https://yourusername.github.io`
-
-### Option 2: Custom Domain (www.btubbsassociates.com)
-
-1. **Complete steps 1-4 above first**
-
-2. **Configure custom domain on GitHub:**
-   - In repository settings → Pages
-   - Under "Custom domain", enter: `www.btubbsassociates.com`
-   - Click "Save"
-   - Enable "Enforce HTTPS" (wait a few minutes after saving domain)
-
-3. **Update DNS with your domain registrar:**
-
-   Add these DNS records:
-
-   **For www.btubbsassociates.com:**
-   ```
-   Type: CNAME
-   Name: www
-   Value: yourusername.github.io
-   ```
-
-   **For btubbsassociates.com (apex domain):**
-   ```
-   Type: A
-   Name: @
-   Value: 185.199.108.153
-   
-   Type: A
-   Name: @
-   Value: 185.199.109.153
-   
-   Type: A
-   Name: @
-   Value: 185.199.110.153
-   
-   Type: A
-   Name: @
-   Value: 185.199.111.153
-   ```
-
-4. **Wait for DNS propagation:**
-   - Can take 1-48 hours (usually within a few hours)
-   - Test at: https://www.whatsmydns.net
-
-5. **Add CNAME file:**
-   Create a file named `CNAME` in the root directory:
-   ```
-   www.btubbsassociates.com
-   ```
-   Then commit and push:
-   ```bash
-   echo "www.btubbsassociates.com" > CNAME
-   git add CNAME
-   git commit -m "Add custom domain"
-   git push
-   ```
-
-## 🔄 Updating Your Site
-
-After initial deployment, to make changes:
+### Updating the Site
 
 ```bash
 # 1. Make your changes to files
@@ -228,26 +174,6 @@ git push
 
 # GitHub Pages will automatically rebuild and deploy (takes 2-5 minutes)
 ```
-
-## 📋 Image Setup Checklist
-
-After downloading images from Wix, rename and place them as follows:
-
-- [ ] `assets/images/hero-background.jpg` - Touchscreen computer image
-- [ ] `assets/images/bill-tubbs-photo.jpg` - Your professional photo
-- [ ] `assets/images/services/data-analytics.jpg` - Analyzing data image
-- [ ] `assets/images/services/process-control.jpg` - Business meeting image
-- [ ] `assets/images/services/energy-management.jpg` - Industrial facility image
-- [ ] `assets/images/services/production-optimization.jpg` - Control room image (or use replacement)
-- [ ] `assets/images/services/management-control.jpg` - Graphs image
-- [ ] `assets/images/testimonials/icon-oil-gas.gif` - Oil & gas facility icon
-- [ ] `assets/images/testimonials/icon-mine.gif` - Mine icon
-- [ ] `assets/images/icons/linkedin.png` - LinkedIn icon (or use Font Awesome)
-
-**Note:** For the control room image you couldn't download, consider:
-- Using a free stock image from Unsplash/Pexels
-- Using another relevant image from your collection
-- Reaching out to the stock provider
 
 ## 🛠️ Troubleshooting
 
@@ -263,7 +189,6 @@ After downloading images from Wix, rename and place them as follows:
 
 ### Custom domain not working?
 - Verify DNS records are correct
-- Wait for DNS propagation (can take up to 48 hours)
 - Check GitHub Pages settings show "DNS check successful"
 
 ## 💰 Cost Comparison
@@ -273,7 +198,7 @@ After downloading images from Wix, rename and place them as follows:
 
 **Current (GitHub Pages):**
 - Hosting: $0/year
-- Domain: ~$12-15/year (if you own it)
+- Domain: ~$12-15/year
 - **Total savings: ~$180-405/year**
 
 ## 📞 Support
@@ -283,20 +208,6 @@ For questions or issues:
 - Check Jekyll documentation: https://jekyllrb.com/docs/
 - Check GitHub Pages docs: https://docs.github.com/pages
 
-## ✅ Pre-Launch Checklist
-
-Before going live:
-
-- [ ] All images added and optimized
-- [ ] Contact information updated in `_config.yml`
-- [ ] Test all pages locally
-- [ ] Test all links work
-- [ ] Review on mobile (use browser dev tools)
-- [ ] Add more blog posts (optional)
-- [ ] Set up custom domain DNS
-- [ ] Enable HTTPS on GitHub Pages
-- [ ] Test site after deployment
-
 ## 📄 License
 
-© 2023 B Tubbs & Associates Consulting
+© 2023–2026 B Tubbs & Associates Consulting
