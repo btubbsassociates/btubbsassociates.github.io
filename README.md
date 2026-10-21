@@ -148,17 +148,7 @@ Brand colours are defined as CSS variables at the top of `assets/css/style.scss`
 
 ## 🌐 Deployment
 
-The site is hosted on GitHub Pages from the `main` branch (root folder) of the `btubbsassociates/btubbsassociates.github.io` repository.
-
-The custom domain `btubbsassociates.com` is set in the `CNAME` file. DNS is configured with the registrar as follows:
-
-```
-Type: A      Name: @    Value: 185.199.108.153
-Type: A      Name: @    Value: 185.199.109.153
-Type: A      Name: @    Value: 185.199.110.153
-Type: A      Name: @    Value: 185.199.111.153
-Type: CNAME  Name: www  Value: btubbsassociates.github.io
-```
+The site is already deployed on GitHub Pages from the `main` branch of this repository, and the domain https://btubbsassociates.com (set in the `CNAME` file) points to it. No further setup is needed — pushing to `main` publishes changes.
 
 ### Updating the Site
 
@@ -190,16 +180,6 @@ git push
 ### Custom domain not working?
 - Verify DNS records are correct
 - Check GitHub Pages settings show "DNS check successful"
-
-## 💰 Cost Comparison
-
-**Previous (Wix):**
-- ~$192-420/year
-
-**Current (GitHub Pages):**
-- Hosting: $0/year
-- Domain: ~$12-15/year
-- **Total savings: ~$180-405/year**
 
 ## 📞 Support
 
