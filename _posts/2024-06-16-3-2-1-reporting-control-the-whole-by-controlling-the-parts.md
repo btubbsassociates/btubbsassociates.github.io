@@ -2,11 +2,12 @@
 layout: post
 title: "3-2-1 reporting – control the whole by controlling the parts"
 date: 2024-06-16 16:20:00 -0700
+last_modified_at: 2026-10-21
 categories: operations-management
 author: Bill Tubbs
 ---
 
-In the [previous article](/post/article-short-interval-control-for-management) I explained the concept of a hierarchical *management control and reporting system* based on the principle of *time-scale separation* (i.e. separating hourly, daily, and weekly decision-making). However, this is only one dimension of hierarchical management. In this article, I introduce *task decomposition*, and the concept of *3-2-1 reporting*, which is how decentralized decisions in a large, integrated facility are coordinated to ensure the overall operation achieves its objectives.
+In the [previous article](/post/article-short-interval-control-for-management) I explained the concept of a hierarchical *management control and reporting system* based on the principle of *timescale separation* (i.e. separating hourly, daily, and weekly decision-making). However, this is only one dimension of hierarchical management. In this article, I introduce *task decomposition*, and the concept of *3-2-1 reporting*, which is how decentralized decisions in a large, integrated facility are coordinated to ensure the overall operation achieves its objectives.
 
 ![Aerial view of an industrial processing plant at night with storage tanks and illuminated process units.](/assets/images/blog/chemical-complex-aerial.jpg)
 
@@ -63,7 +64,9 @@ Furthermore, in my view, effective 3-2-1 reporting is a foundation on which to b
 
 ## Summary
 
-- Task decomposition – control the whole by controlling the parts
-- Silo thinking and the need for coordination
-- Defining critical dependencies using KPI trees
-- 3-2-1 reporting hierarchy to control and aggregate performance.
+Why is a 3-2-1 reporting structure needed in a large, complex manufacturing operation?
+
+1. Task decomposition – control the whole by controlling the parts
+2. KPI trees clarify responsibilities for critical dependencies
+3. 3-2-1 reporting hierarchy to control and aggregate performance
+4. A foundation for effective production planning and scheduling (S&OP).

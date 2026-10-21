@@ -2,7 +2,7 @@
 layout: post
 title: "Short interval control for management"
 date: 2023-07-09 09:33:00 -0700
-last_modified_at: 2024-06-16
+last_modified_at: 2026-10-21
 categories: operations-management
 author: Bill Tubbs
 ---
@@ -33,7 +33,7 @@ It's also common to see multiple time-horizons presented on the same KPI report.
 
 ## The weekly-monthly operating report
 
-Similar to the DWOR, which links daily and weekly performance, the weekly-monthly operating report (WMOR) makes the connection between weekly performance and monthly. Figure 3 shows a snapshot of an actual WMOR. It shows production for the current week and the previous 4 weeks, a rolling 5-week summary, and monthly performance for the year-to-date. As well as production, it includes other KPIs necessary to capture all aspects of operational performance. Note that for each KPI there is a planned value from the sales and operational plan (S&OP) or a target.
+Similar to the DWOR, which links daily and weekly performance, the weekly-monthly operating report (WMOR) makes the connection between weekly performance and monthly. Figure 3 shows a snapshot of an actual WMOR. It shows production for the current week and the previous 4 weeks, a rolling 5-week summary, and monthly performance for the year-to-date. As well as production, it includes other KPIs necessary to capture all aspects of operational performance. Note that for each KPI there is a planned value from the sales and operations plan (S&OP) or a target.
 
 ![A cropped image of part of a weekly-monthly operating report](/assets/images/blog/weekly-monthly-operating-report.png)
 *Figure 3. Weekly-Monthly Operating Report (WMOR)*

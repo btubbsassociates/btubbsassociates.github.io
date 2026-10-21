@@ -2,7 +2,7 @@
 layout: post
 title: "The choke model – start with the facts on losses"
 date: 2023-03-19 12:13:00 -0700
-last_modified_at: 2023-04-23 12:13:00 -0700
+last_modified_at: 2026-10-21
 categories: operations-management
 author: Bill Tubbs
 ---
@@ -42,7 +42,7 @@ A choke model also provides insights on where SIC and loss capture should be imp
 
 Choke models are closely related to the [*theory of constraints*](https://www.leanproduction.com/theory-of-constraints/) which is a methodology to identify the limiting factor in a process and then systematically improve it until it is no longer the constraint. In lean manufacturing doctrine, the technique of *line balancing* is used to synchronize and subordinate all steps in the production process to the rate at the current constraint. This makes it immediately apparent which step in the process is causing a line slowdown or stoppage.
 
-Line balancing is difficult to achieve in large process plants, which have complex dynamics, and where temporary adjustments to production rates are avoided whenever possible. For these reasons, process plants tend to rely on intermediate product storage to absorb temporary imbalances. Any imbalance in inventories remaining at the end of a day is then corrected by the supply and operational planning process (S&OP) which determines the optimal production plan for the next day. Although not as conceptually simple as line balancing, this achieves the same goal of subordinating overall production to the actual constraints.
+Line balancing is difficult to achieve in large process plants, which have complex dynamics, and where temporary adjustments to production rates are avoided whenever possible. For these reasons, process plants tend to rely on intermediate product storage to absorb temporary imbalances. Any imbalance in inventories remaining at the end of a day is then corrected by the [sales and operations planning](https://en.wikipedia.org/wiki/Sales_and_operations_planning) (S&OP) process, which determines the optimal production plan for the next day. Although not as conceptually simple as line balancing, this achieves the same goal of subordinating overall production to the actual constraints.
 
 Ideally, we would like to attribute losses in final production to losses at specific choke points. However, this can be difficult to do in the absence of line balancing. Typically, in a linear process such as the first one in Figure 1, chokes that are downstream of the most significant choke point will frequently report losses due to a lack of feedstock. Likewise, chokes upstream of a significant choke will report downtime due to downstream rate reductions or lack of downstream storage. In this case, it is not too difficult to see where the problem is.
 
